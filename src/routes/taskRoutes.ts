@@ -15,6 +15,7 @@ async function taskRoutes(fastify: FastifyInstance) {
   fastify.get('/:id', getTaskById);
   fastify.put('/:id', updateTask);
   fastify.delete('/:id', deleteTask);
+  console.log("sad");
 }
 
 export default taskRoutes;
