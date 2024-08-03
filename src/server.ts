@@ -19,7 +19,7 @@ server.register(fastifyFormbody);
 server.register(fastifyJwt, {
     secret: process.env.JWT_SECRET || 'd3b07384d113edec49eaa6238ad5ff00b204e9800998ecf8427e',
     sign: {
-      expiresIn: '10s'
+      expiresIn: '2h'
     }
   });
 
